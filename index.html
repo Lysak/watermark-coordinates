@@ -3,19 +3,23 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Watermark coords</title>
+  <title>Watermark coordinates</title>
 </head>
 <body>
 <div id="app">
   <header class="bar">
-    <button id="reset">Reset points</button>
-    <button id="copy">Copy WatermarkOptions</button>
-    <span id="hint">Paste (Ctrl+V) an image, then click 4 points.</span>
+    <button id="reset" type="button">Reset</button>
+    <button id="sym" type="button">Symmetrize</button>
+    <button id="copy" type="button">Copy</button>
+    <span id="hint">Paste (Ctrl+V) an image, click 4 points; Space+drag to pan; wheel to zoom.</span>
   </header>
 
   <div class="wrap">
     <canvas id="c"></canvas>
-    <pre id="out">{ x: 0, y: 0, width: 0, height: 0 }</pre>
+    <pre id="out">export type WatermarkOptions = { x: number; y: number; width: number; height: number };
+
+export const watermark: WatermarkOptions = { x: 0, y: 0, width: 0, height: 0 };</pre>
+
   </div>
 </div>
 

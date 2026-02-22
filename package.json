@@ -1,7 +1,7 @@
 {
-  "name": "wm-coords",
+  "name": "watermark-coordinates",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "devDependencies": {
+    "@types/node": "^25.3.0",
     "typescript": "~5.9.3",
     "vite": "^8.0.0-beta.13"
   },
